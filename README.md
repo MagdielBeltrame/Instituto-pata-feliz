@@ -6,6 +6,8 @@ Este projeto é uma plataforma web completa e profissional desenvolvida para o *
 
 Este repositório corresponde ao desenvolvimento do projeto acadêmico XYZ, com foco na aplicação prática de tecnologias web em um contexto socialmente relevante.
 
+🚀 Veja o projeto ao vivo: https://magdielbeltrame.github.io/Instituto-pata-feliz/
+
 ## 2. Contexto e Relevância
 
 O terceiro setor brasileiro, que movimenta bilhões anualmente, carece de presença digital adequada. Muitas ONGs, como o Instituto Pata Feliz, não possuem recursos para desenvolver plataformas robustas. Este projeto visa suprir essa lacuna, oferecendo uma solução acessível e profissional.
