@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Instituto Pata Feliz</title>
+    <meta name="description" content="Cadastre-se para ser voluntário ou para iniciar seu processo de adoção no Instituto Pata Feliz.">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1>🐾 Instituto Pata Feliz</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos e Adoção</a></li>
+                    <li><a href="cadastro.html" class="active">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <header class="page-header">
+                <h2>Formulário de Cadastro</h2>
+                <p>Preencha o formulário abaixo para se candidatar a voluntário ou para iniciar o processo de adoção.</p>
+            </header>
+
+            <form action="processa_cadastro.php" method="POST" class="main-form">
+                
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome_completo" required placeholder="Seu nome completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">Telefone (WhatsApp):</label>
+                        <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="date" id="nascimento" name="data_nascimento" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+
+                    <div class="form-group">
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" required placeholder="00000-000" pattern="\d{5}-\d{3}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="endereco">Endereço (Rua e Número):</label>
+                        <input type="text" id="endereco" name="endereco" required placeholder="Ex: Rua das Patinhas, 123">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <select id="estado" name="estado" required>
+                            <option value="">Selecione...</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="MG">Minas Gerais</option>
+                            </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Interesse</legend>
+                    <p>Qual seu principal interesse no instituto?</p>
+                    <div class="form-group radio-group">
+                        <input type="radio" id="interesse-adocao" name="interesse" value="adocao" checked>
+                        <label for="interesse-adocao">Quero Adotar um Animal</label>
+                    </div>
+                    <div class="form-group radio-group">
+                        <input type="radio" id="interesse-voluntario" name="interesse" value="voluntario">
+                        <label for="interesse-voluntario">Quero ser Voluntário</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="cta-button">Enviar Cadastro</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Instituto Pata Feliz. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
