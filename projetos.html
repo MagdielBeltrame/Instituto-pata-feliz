@@ -5,17 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos e Adoção - Instituto Pata Feliz</title>
     <meta name="description" content="Conheça nossos animais para adoção, saiba como ser voluntário e como doar para o Instituto Pata Feliz.">
-    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/css/style.css"> 
 </head>
 <body>
 
     <header class="main-header">
         <div class="container">
             <h1>🐾 Instituto Pata Feliz</h1>
+            
+            <button id="dark-mode-toggle" class="cta-button" aria-label="Alternar Modo Escuro">
+                🌓 Modo Escuro
+            </button>
+            
+            <button class="menu-toggler" aria-label="Abrir Menu de Navegação">
+                <span class="hamburguer-icon"></span>
+            </button>
+            
             <nav>
                 <ul>
                     <li><a href="index.html">Início</a></li>
-                    <li><a href="projetos.html" class="active">Projetos e Adoção</a></li>
+                    <li class="dropdown"> 
+                        <a href="projetos.html" class="active">Projetos e Adoção ▼</a> 
+                        <ul class="submenu">
+                            <li><a href="#adocao">Quero Adotar</a></li>
+                            <li><a href="#voluntariado">Voluntariado</a></li>
+                            <li><a href="#doacao">Doação</a></li>
+                        </ul>
+                    </li>
                     <li><a href="cadastro.html">Cadastro</a></li>
                 </ul>
             </nav>
@@ -24,13 +40,16 @@
 
     <main>
         <div class="container">
+            
             <header class="page-header">
                 <h2>Nossos Projetos e Como Ajudar</h2>
                 <p>Sua ajuda transforma vidas. Veja como você pode fazer parte!</p>
             </header>
 
             <section id="voluntariado" class="page-section">
-                <h3>Seja um Voluntário 💖</h3>
+                <div class="page-header">
+                    <h3>Seja um Voluntário 💖</h3>
+                </div>
                 <p>O voluntariado é a alma do nosso instituto. Precisamos de ajuda em diversas frentes:</p>
                 <ul>
                     <li>Feiras de adoção (fins de semana)</li>
@@ -42,39 +61,66 @@
             </section>
 
             <section id="doacao" class="page-section">
-                <h3>Como Doar 💰</h3>
+                <div class="page-header">
+                    <h3>Como Doar 💰</h3>
+                </div>
                 <p>Manter nossos mais de 100 animais resgatados tem um custo alto. Toda doação é bem-vinda e faz uma enorme diferença. Você pode ajudar com:</p>
                 <ul>
                     <li>Doação via PIX (Chave: 12.345.678/0001-99)</li>
-                    <li>Ração (cães e gatos, filhotes e adultos)</li>
+                    <li>Ração (cães, filhotes e adultos)</li>
                     <li>Medicamentos e material de limpeza</li>
                     <li>Apadrinhamento de um animal (custo mensal)</li>
                 </ul>
                 <p>Para doações financeiras recorrentes, entre em contato.</p>
             </section>
-
+            
+            
             <section id="adocao" class="page-section">
-                <h3>Animais para Adoção 🏡</h3>
-                <p>Conheça alguns dos nossos anjinhos que esperam por um lar.</p>
                 
-                <div class="gallery">
-                    <article class="pet-card">
-                        <img src="assets/img/00375070.jpg" alt="Rex, um cão vira-lata caramelo, sorrindo." class="responsive-img">
-                        <h4>Rex</h4>
-                        <p>Macho, 2 anos, porte médio. Muito dócil e brincalhão. Adora crianças!</p>
-                    </article>
+                <header class="page-header" style="margin-bottom: var(--space-md);">
+                    <h3>Cães para Adoção 🏡</h3>
+                    <p>Conheça alguns dos nossos anjinhos que esperam por um lar.</p>
+                </header>
+
+                <div class="grid-layout">
                     
-                    <article class="pet-card">
-                        <img src="assets/img/00375059.jpg" alt="Mia, uma cachorra dócil e companheira." class="responsive-img">
-                        <h4>Mia</h4>
-                        <p>Fêmea, 1 ano, porte médio. Calma, carinhosa e ótima companhia para sofá.</p>
-                    </article>
-                    
-                    <article class="pet-card">
-                        <img src="assets/img/00375067.jpg" alt="Sasha, uma cadelinha tranquila e amorosa" class="responsive-img">
-                        <h4>Sasha</h4>
-                        <p>Fêmea, 2 anos, porte médio. Muita energia e pronta para bagunça!</p>
-                    </article>
+                    <aside class="col-12 col-md-4 col-lg-3 aside">
+                        <h4>Filtros de Busca</h4>
+                        <ul>
+                            <li class="ativo" data-filter="all">Todos os Animais</li>
+                            <li data-filter="small">Porte Pequeno</li>
+                            <li data-filter="medium">Porte Médio</li>
+                            <li data-filter="large">Porte Grande</li>
+                            <li data-filter="senior">Animais Idosos</li>
+                        </ul>
+                    </aside>
+
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <div id="pets-container" class="gallery">
+                            
+                            <div class="pet-card" data-category="dog" data-size="small">
+                                <img src="https://picsum.photos/300/200?random=10" alt="Cachorro de porte pequeno, Vira-lata" class="responsive-img">
+                                <h4>Mel</h4>
+                                <p>Porte pequeno, 2 anos. Super carinhosa e adora colo.</p>
+                                <a href="cadastro.html" class="cta-button" style="font-size: var(--fs-sm);">Adotar</a>
+                            </div>
+
+                            <div class="pet-card" data-category="cat" data-size="medium">
+                                <img src="https://picsum.photos/300/200?random=11" alt="Gato de porte médio, Preto" class="responsive-img">
+                                <h4>Balthazar</h4>
+                                <p>Gato preto majestoso, 4 anos. Independente e caçador de brinquedos.</p>
+                                <a href="cadastro.html" class="cta-button" style="font-size: var(--fs-sm);">Adotar</a>
+                            </div>
+                            
+                            <div class="pet-card" data-category="dog" data-size="large" data-age="senior">
+                                <img src="https://picsum.photos/300/200?random=12" alt="Cachorro idoso de porte grande, Golden Retriever" class="responsive-img">
+                                <h4>Milo</h4>
+                                <p>Golden, 9 anos. Calmo e paciente, perfeito para apartamentos.</p>
+                                <a href="cadastro.html" class="cta-button" style="font-size: var(--fs-sm);">Adotar</a>
+                            </div>
+
+                            </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -85,6 +131,7 @@
             <p>&copy; 2025 Instituto Pata Feliz. Todos os direitos reservados.</p>
         </div>
     </footer>
-
+    
+    <script src="assets/js/main.js"></script> 
 </body>
 </html>

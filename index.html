@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instituto Pata Feliz - Adoção de Cães e Gatos</title>
-    <meta name="description" content="Instituto Pata Feliz: ajudando cães e gatos abandonados a encontrar um lar amoroso.">
-    <link rel="stylesheet" href="assets/CSS/style.css">
+    <title>Instituto Pata Feliz - Adoção de Cães</title>
+    <meta name="description" content="Instituto Pata Feliz: ajudando cães abandonados a encontrar um lar amoroso.">
+    <link rel="stylesheet" href="assets/css/style.css"> 
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
     <header class="main-header">
         <div class="container">
+            
             <h1>🐾 Instituto Pata Feliz</h1>
+            
+            <button id="dark-mode-toggle" class="cta-button" aria-label="Alternar Modo Escuro">
+                🌓 Modo Escuro
+            </button>
+
+            <button class="menu-toggler" aria-label="Abrir Menu de Navegação">
+                <span class="hamburguer-icon"></span>
+            </button>
+            
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Início</a></li>
-                    <li><a href="projetos.html">Projetos e Adoção</a></li>
+                    <li class="dropdown"> 
+                        <a href="projetos.html">Projetos e Adoção ▼</a>
+                        <ul class="submenu">
+                            <li><a href="projetos.html#adocao">Quero Adotar</a></li>
+                            <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
+                            <li><a href="projetos.html#doacao">Doação</a></li> 
+                        </ul>
+                    </li>
                     <li><a href="cadastro.html">Cadastro</a></li>
                 </ul>
             </nav>
@@ -26,31 +43,43 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h2>Encontre seu novo melhor amigo 🐶🐱</h2>
-                <p>Nossa missão é resgatar, cuidar e encontrar lares permanentes para cães e gatos em situação de vulnerabilidade.</p>
+                <h2>Encontre seu novo melhor amigo 🐶</h2>
+                <p>Nossa missão é resgatar, cuidar e encontrar lares permanentes para cães em situação de vulnerabilidade.</p>
                 <a href="projetos.html" class="cta-button">Quero Adotar</a>
             </div>
         </section>
 
         <section id="sobre" class="container page-section">
-            <h2>Sobre o Instituto</h2>
-            <article>
-                <h3>Nossa História</h3>
-                <p>O Instituto Pata Feliz nasceu em 2015 do sonho de um pequeno grupo de amigos determinados a mudar a realidade de animais abandonados. O que começou com resgates pontuais se tornou uma das principais organizações de proteção animal da região.</p>
-                <img src="assets/img/00375061.jpg" alt="Equipe do Instituto Pata Feliz com cães resgatados." class="responsive-img">
-            </article>
-            <article>
-                <h3>Missão, Visão e Valores</h3>
-                <ul>
-                    <li><strong>Missão:</strong> Resgatar, reabilitar e encontrar lares responsáveis para animais abandonados, promovendo a posse responsável.</li>
-                    <li><strong>Visão:</strong> Ser referência no combate ao abandono de animais, com um centro de adoção modelo.</li>
-                    <li><strong>Valor:</strong> Amor, respeito à vida, transparência e comprometimento.</li>
-                </ul>
-            </article>
-        </section>
+            <div class="page-header">
+                <h2>Sobre o Instituto</h2>
+            </div>
+            
+            <div class="grid-layout">
+                
+                <article class="col-6 col-md-6 col-sm-12"> 
+                    <h3>Nossa História</h3>
+                    <p>O Instituto Pata Feliz nasceu em 2015 do sonho de um pequeno grupo de amigos determinados a mudar a realidade de animais abandonados. O que começou com resgates pontuais se tornou uma das principais organizações de proteção animal da região.</p>
+                    <img src="assets/img/00375061.jpg" alt="Equipe do Instituto Pata Feliz com cães resgatados." class="responsive-img">
+                </article>
+                
+                <article class="col-6 col-md-6 col-sm-12"> 
+                    <h3>Missão, Visão e Valores</h3>
+                    <p>Nosso trabalho é guiado pelos seguintes princípios:</p>
+                    <ul>
+                        <li><strong>Missão:</strong> Resgatar, reabilitar e encontrar lares responsáveis para animais abandonados, promovendo a posse responsável.</li>
+                        <li><strong>Visão:</strong> Ser referência no combate ao abandono de animais, com um centro de adoção modelo.</li>
+                        <li><strong>Valor:</strong> Amor, respeito à vida, transparência e comprometimento.</li>
+                    </ul>
+                </article>
 
+            </div>
+            
+        </section>
+        
         <section id="contato" class="container page-section">
-            <h2>Entre em Contato</h2>
+            <div class="page-header">
+                <h2>Entre em Contato</h2>
+            </div>
             <p>Tire suas dúvidas, saiba como ajudar ou venha nos visitar!</p>
             
             <div class="contact-info">
@@ -70,8 +99,10 @@
     <footer class="main-footer">
         <div class="container">
             <p>&copy; 2025 Instituto Pata Feliz. Todos os direitos reservados.</p>
-            </div>
+        </div>
     </footer>
+    
+    <script src="assets/js/main.js"></script> 
 
 </body>
 </html>
