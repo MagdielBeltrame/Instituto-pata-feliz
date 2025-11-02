@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos e Adoção - Instituto Pata Feliz</title>
+  <meta name="keywords" content="ONG, terceiro setor, projetos, adoção">
     <meta name="description" content="Conheça nossos animais para adoção, saiba como ser voluntário e como doar para o Instituto Pata Feliz.">
     <link rel="stylesheet" href="assets/css/style.css"> 
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
 
     <header class="main-header">
         <div class="container">
@@ -21,7 +27,7 @@
                 <span class="hamburguer-icon"></span>
             </button>
             
-            <nav>
+            <nav role="navigation" aria-label="Menu principal">
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li class="dropdown"> 
@@ -38,7 +44,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main" tabindex="-1" role="main">
         <div class="container">
             
             <header class="page-header">
@@ -99,34 +105,44 @@
                         <div id="pets-container" class="gallery">
                             
                             <div class="pet-card" data-category="dog" data-size="small">
-                                <img src="https://picsum.photos/300/200?random=10" alt="Cachorro de porte pequeno, Vira-lata" class="responsive-img">
-                                <h4>Mel</h4>
-                                <p>Porte pequeno, 2 anos. Super carinhosa e adora colo.</p>
+                                <img src="assets/img/pingo.jpg" alt="Cachorro de porte pequeno, Vira-lata" class="responsive-img">
+                                <h4>Pingo</h4>
+                                <p>Porte pequeno, 2 anos. Super carinhoso e adora dormir.</p>
                                 <a href="cadastro.html" class="cta-button" style="font-size: var(--fs-sm);">Adotar</a>
                             </div>
 
                             <div class="pet-card" data-category="cat" data-size="medium">
-                                <img src="https://picsum.photos/300/200?random=11" alt="Gato de porte médio, Preto" class="responsive-img">
-                                <h4>Balthazar</h4>
-                                <p>Gato preto majestoso, 4 anos. Independente e caçador de brinquedos.</p>
+                                <img src="assets/img/luna.jpg" alt="cachorra de porte médio" class="responsive-img">
+                                <h4>Luna</h4>
+                                <p>Cachorra amorosa e brincalhona, 4 anos. Independente e caçadora de brinquedos.</p>
                                 <a href="cadastro.html" class="cta-button" style="font-size: var(--fs-sm);">Adotar</a>
                             </div>
                             
                             <div class="pet-card" data-category="dog" data-size="large" data-age="senior">
-                                <img src="https://picsum.photos/300/200?random=12" alt="Cachorro idoso de porte grande, Golden Retriever" class="responsive-img">
-                                <h4>Milo</h4>
-                                <p>Golden, 9 anos. Calmo e paciente, perfeito para apartamentos.</p>
+                                <img src="assets/img/thor.jpg" alt="Cachorro filhote com um fundo azul" class="responsive-img">
+                                <h4>Thor</h4>
+                                <p>Filhote calmo e paciente, perfeito para apartamentos.</p>
                                 <a href="cadastro.html" class="cta-button" style="font-size: var(--fs-sm);">Adotar</a>
                             </div>
 
+                            <div class="pet-card" data-category="dog" data-size="large" data-age="senior">
+                                <img src="assets/img/max.jpg" alt="Cachorro no cola de uma voluntária" class="responsive-img">
+                                <h4>Max</h4>
+                                <p>Cachorro amoroso e calmo, ótima companhia para sófa.</p>
+                                <a href="cadastro.html" class="cta-button" style="font-size: var(--fs-sm);">Adotar</a>
                             </div>
+                           
+                        </div>
+                          
+                        </div>
+
                     </div>
                 </div>
             </section>
         </div>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" role="contentinfo">
         <div class="container">
             <p>&copy; 2025 Instituto Pata Feliz. Todos os direitos reservados.</p>
         </div>

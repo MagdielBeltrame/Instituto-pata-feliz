@@ -1,103 +1,208 @@
 🐾 Instituto Pata Feliz - Plataforma Web
-1. Visão Geral do Projeto
+
+
+## 1. Visão Geral do Projeto
+
 Este projeto é uma plataforma web completa e profissional desenvolvida para o Instituto Pata Feliz, uma ONG focada no resgate e adoção de cães e gatos. O objetivo é aplicar de forma integrada os conceitos de desenvolvimento front-end (HTML5, CSS3, JavaScript) para criar uma presença digital que ajude a organização a gerenciar atividades, divulgar projetos, captar recursos e engajar voluntários.
+
+
 
 Este repositório corresponde ao desenvolvimento do projeto acadêmico XYZ, com foco na aplicação prática de tecnologias web em um contexto socialmente relevante.
 
-2. Contexto e Relevância
+
+
+🚀 Veja o projeto ao vivo: [Instituto Pata Feliz](https://magdielbeltrame.github.io/Instituto-pata-feliz/)
+
+
+
+## 2. Contexto e Relevância
+
 O terceiro setor brasileiro, que movimenta bilhões anualmente, carece de presença digital adequada. Muitas ONGs, como o Instituto Pata Feliz, não possuem recursos para desenvolver plataformas robustas. Este projeto visa suprir essa lacuna, oferecendo uma solução acessível e profissional.
 
-3. Objetivos
-Geral
+
+
+## 3. Objetivos
+
+**Geral:**  
+
 Desenvolver uma plataforma web que permita ao Instituto Pata Feliz gerenciar suas atividades de resgate e adoção, captar doações e engajar a comunidade de voluntários e adotantes.
 
-Específicos (da Disciplina)
-Aplicar HTML5 para estruturas semânticas.
 
-Implementar layouts responsivos com CSS3.
 
-Desenvolver interatividade com JavaScript.
+**Específicos (da Disciplina):**  
 
-Integrar ferramentas de versionamento (Git/GitHub), acessibilidade (WCAG) e infraestrutura.
+- Aplicar HTML5 para estruturas semânticas.  
 
-Simular um ambiente de desenvolvimento profissional.
+- Implementar layouts responsivos com CSS3.  
 
-4. Funcionalidades Chave Implementadas ✨
+- Desenvolver interatividade com JavaScript.  
+
+- Integrar ferramentas de versionamento (Git/GitHub), acessibilidade (WCAG) e infraestrutura.  
+
+- Simular um ambiente de desenvolvimento profissional.
+
+
+
+## 4. Funcionalidades Chave Implementadas ✨
+
 Esta entrega do projeto foca na estrutura e nas principais ferramentas de engajamento do usuário, com destaque para a interatividade e a gestão de dados na interface.
 
-Navegação Semântica e Responsiva: Menu de navegação principal (<nav>) com submenus (dropdown) e adaptado para dispositivos móveis (menu-toggler / ícone hambúrguer).
 
-Toggle de Dark Mode: Botão de acessibilidade (#theme-toggler) implementado em todas as páginas para alternar entre os modos Claro e Escuro (Alto Contraste), conforme requisitos WCAG, com persistência via localStorage.
 
-Formulário Interativo de Cadastro/Interesse:
+- **Navegação Semântica e Responsiva:** Menu principal `<nav>` com submenus e suporte mobile (ícone hambúrguer).  
 
-Máscaras de Input: Aplicação de máscaras em JavaScript (CPF, Telefone e CEP) para guiar o usuário na inserção dos dados.
+- **Toggle de Dark Mode:** Alternância entre modo claro/escuro (WCAG AA) com persistência via localStorage.  
 
-Validação em Tempo Real: Validação robusta de campos obrigatórios e formato (incluindo a checagem dos dígitos verificadores do CPF).
+- **Formulário Interativo de Cadastro/Interesse:**  
 
-Galeria de Adoção (SPA Básico):
+  - Máscaras de Input (CPF, Telefone, CEP) em JavaScript.  
 
-Renderização dinâmica dos animais disponíveis via JavaScript Template, simulando um consumo de dados de uma API.
+  - Validação em tempo real com checagem de CPF.  
 
-Funcionalidade de Filtros para organizar os pets por porte e idade.
+- **Galeria de Adoção (SPA Básico):**  
 
-Seções de Engajamento: Estrutura para Voluntariado e Doação com chamadas claras para ação (CTAs).
+  - Renderização dinâmica dos animais via JavaScript.  
 
-5. Tecnologias e Padrões
-HTML5: Utilizado para a estrutura semântica das páginas (Header, Main, Section, Footer, Fieldset) e acessibilidade.
+  - Filtros por porte e idade.  
 
-CSS3: Utilizado para o estilo e layout.
+- **Seções de Engajamento:** Voluntariado e Doação com CTAs.
 
-Variáveis CSS (Custom Properties): Implementação de um sistema de design básico e variáveis específicas para o Dark Mode.
 
-Responsividade: Abordagem Mobile-First com Flexbox e Media Queries.
 
-JavaScript (Vanilla JS): Utilizado para interatividade e lógica de negócios no Front-End.
+## 5. Tecnologias e Padrões
 
-Lógica de ativação e persistência do Dark Mode.
+- **HTML5:** Estrutura semântica e acessibilidade.  
 
-Máscaras e Funções de Validação de Dados (CPF, Telefone, CEP).
+- **CSS3:** Estilo e layout com variáveis e Dark Mode.  
 
-Implementação de Templates para renderização de conteúdo (SPA Básico).
+- **JavaScript (Vanilla):** Interatividade, máscaras e lógica de SPA.  
 
-Versionamento: Git e GitHub.
+- **Responsividade:** Mobile-first com Flexbox e Media Queries.  
 
-6. Personas e Casos de Uso
-Administrador da ONG: Gerencia o cadastro de animais, atualiza projetos e acompanha doações.
+- **Versionamento:** Git e GitHub.
 
-Voluntário: Busca oportunidades para ajudar (ex: feiras de adoção, lares temporários).
 
-Doador/Apoiador: Realiza doações (PIX, cartão) e acompanha a prestação de contas.
 
-Visitante/Adotante: Conhece os animais disponíveis, preenche o formulário de interesse em adoção.
+## 6. Personas e Casos de Uso
 
-7. Requisitos Técnicos Gerais
-Responsividade: Mobile-first.
+- **Administrador:** Gerencia animais, projetos e doações.  
 
-Desempenho e Otimização: Alcançado através do uso de JavaScript Puro (Vanilla JS), evitando dependências pesadas, e da aplicação de uma estratégia Mobile-First com CSS eficiente. A otimização de imagens (redimensionamento e compressão) foi aplicada nos ativos visuais para garantir o carregamento rápido.
+- **Voluntário:** Busca oportunidades para ajudar.  
 
-Acessibilidade: Conformidade com WCAG 2.1 Nível AA (especialmente via Dark Mode e semântica).
+- **Doador/Apoiador:** Realiza e acompanha doações.  
 
-SEO: Meta tags e semântica adequadas.
+- **Visitante/Adotante:** Conhece os animais e preenche formulário de interesse.
 
-8. Estrutura do Repositório 📁
-A organização do projeto segue a estrutura padrão de desenvolvimento Front-End:
 
-/ (Raiz):
 
-Arquivos HTML principais (index.html, projetos.html, cadastro.html).
+## 7. Requisitos Técnicos Gerais
 
-Documentação principal (README.md).
+- **Responsividade:** Mobile-first.  
 
-/assets/: Pasta para todos os recursos estáticos.
+- **Desempenho:** JavaScript puro e CSS eficiente.  
 
-/assets/css/: Contém as folhas de estilo do projeto (style.css), centralizando o sistema de design e variáveis CSS.
+- **Acessibilidade:** Conformidade com WCAG 2.1 Nível AA.  
 
-/assets/js/: Contém o script JavaScript (main.js) para toda a interatividade, máscaras, validação e lógica do SPA.
+- **SEO:** Meta tags e semântica adequadas.
 
-/assets/img/: Armazena todos os ativos visuais (imagens de pets, logo e ícones).
 
-9. Como Executar (Acesso ao Projeto)
-Você pode acessar o projeto online através do GitHub Pages:
 
-Link de Acesso: https://magdielbeltrame.github.io/Instituto-pata-feliz/
+## 8. Estrutura do Repositório 📁
+
+```
+
+/ (Raiz)
+
+├── index.html
+
+├── projetos.html
+
+├── cadastro.html
+
+├── README.md
+
+└── assets/
+
+    ├── css/style.css
+
+    ├── js/main.js
+
+    └── img/
+
+```
+
+
+
+## 9. Como Executar (Acesso ao Projeto)
+
+Você pode acessar o projeto online através do GitHub Pages:  
+
+🔗 [https://magdielbeltrame.github.io/Instituto-pata-feliz/](https://magdielbeltrame.github.io/Instituto-pata-feliz/)
+
+
+
+Ou rodar localmente:
+
+1. Clone este repositório;
+
+2. Abra o arquivo `index.html` no navegador.
+
+
+
+---
+
+
+
+## 🧱 Instruções de Build Profissional (npm)
+
+Este projeto inclui scripts para minificação profissional usando ferramentas Node.js.
+
+
+
+### Requisitos
+
+- Node.js (v16+ recomendado) e npm instalados.
+
+
+
+### Passos
+
+1. Na raiz do projeto, rode:
+
+   ```bash
+
+   npm install
+
+   ```
+
+2. Para gerar os arquivos minificados (CSS/JS/HTML):
+
+   ```bash
+
+   npm run build
+
+   ```
+
+   Isso irá:
+
+   - usar `postcss` + `cssnano` para minificar CSS em `dist/css/`
+
+   - usar `terser` para minificar JS em `dist/js/bundle.min.js`
+
+   - usar `html-minifier` para minificar HTML em `dist/`
+
+
+
+3. Para testar localmente:
+
+   ```bash
+
+   npm run start
+
+   ```
+
+   Isso usará `serve` para servir o diretório local na porta 5000.
+
+
+
+> Observação: as dependências estão listadas em `package.json`. Se preferir, instale apenas as necessárias (`terser`, `postcss-cli`, `cssnano`, `html-minifier`, `serve`).

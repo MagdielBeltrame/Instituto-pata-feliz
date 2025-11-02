@@ -1,0 +1,24 @@
+{
+  "name": "instituto-pata-feliz-platform",
+  "version": "1.0.0",
+  "description": "Plataforma web para Instituto Pata Feliz - projeto acadêmico (entregas HTML/CSS/JS/Práticas Profissionais)",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "postcss assets/css/*.css --dir dist/css --no-map",
+    "build:js": "terser assets/js/*.js -o dist/js/bundle.min.js --compress --mangle",
+    "build:html": "html-minifier --input-dir . --output-dir dist --collapse-whitespace --remove-comments --minify-css true --minify-js true",
+    "build": "npm run build:css && npm run build:js && npm run build:html",
+    "start": "npx serve . -l 5000"
+  },
+  "author": "Magdiel David Beltrame",
+  "license": "MIT",
+  "devDependencies": {
+    "terser": "^5.0.0",
+    "cssnano": "^5.0.0",
+    "postcss-cli": "^9.0.0",
+    "html-minifier": "^4.0.0",
+    "serve": "^14.0.0",
+    "postcss": "^8.0.0",
+    "autoprefixer": "^10.0.0"
+  }
+}
